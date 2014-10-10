@@ -17,9 +17,11 @@ urlpatterns = patterns('',
     url(r'^$', 'signups.views.home', name='home'),
     url(r'^signup-success/$', 'signups.views.thankyou', name='thankyou'),
     url(r'^about-us/$', 'signups.views.about', name='about'),
-    url(r'^logged-in/$', 'signups.views.login', name='loggedin'),
-    url(r'^authentication/$', 'signups.views.authenticate', name='auth'),
-    url(r'^authentication-failed/$', 'signups.views.authenticate', name='auth'),
+    #url(r'^logged-in/$', 'signups.views.login', name='login'),
+    #url(r'^authenticating/$', 'signups.views.authentication', name='authentication'),
+    #url(r'^authentication-failed/$', 'signups.views.invalid_login', name='AuthenticationFailed'),
+
+    url(r'^logged-in/$', 'signups.views.logged', name='logged'),
     url(r'^admin/', include(admin.site.urls)),
 )
 

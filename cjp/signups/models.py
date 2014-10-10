@@ -13,4 +13,3 @@ class SignUp(models.Model):
 
     def __unicode__(self):
         return smart_unicode(self.email_address)
-        #return smart_unicode(self.password)
